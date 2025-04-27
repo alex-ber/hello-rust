@@ -3,7 +3,22 @@
 {
 	"name": "Rust",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
+	
+	//"image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
+
+	"build": {
+		// Path is relative to the devcontainer.json file.
+		"dockerfile": "Dockerfile",
+		// Context is the directory containing the Dockerfile and any files it needs.
+		// Path is relative to the devcontainer.json file. '..' is the workspace root.
+		"context": "."
+		// Optional: Pass build arguments to Dockerfile
+		// "args": {
+		// 	"USERNAME": "vscode"
+		// }
+	},
+
+
 
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	// "mounts": [
