@@ -57,3 +57,5 @@ USER ${APP_USER}
 
 # Command to run the executable when the container starts
 CMD ["./hello-rust"]
+
+#git -c credential.helper= push -u origin master
