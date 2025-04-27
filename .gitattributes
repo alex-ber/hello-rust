@@ -1,0 +1,11 @@
+# Set default behavior, in case users don't have core.autocrlf set.
+* text=auto
+
+# Declare files that will always have LF line endings on checkout.
+*.json    eol=lf
+*.rs      eol=lf
+*.toml    eol=lf
+*.sh      eol=lf
+.gitignore eol=lf
+.gitattributes eol=lf
+Dockerfile eol=lf

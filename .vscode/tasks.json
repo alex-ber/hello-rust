@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "cargo build",
+			"type": "cargo",
+			"command": "build",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true	// Makes Ctrl+Shift+B run thiss
+			},
+			"detail": "Compile the current package"
+		},
+		{
+            "label": "cargo clean",
+            "type": "cargo",
+            "command": "clean",
+            "problemMatcher": [], // Usually no problems to match for clean
+            "detail": "Remove the target directory"
+        }
+	]
+}
