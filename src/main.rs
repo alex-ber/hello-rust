@@ -12,7 +12,7 @@ fn main() {
     println!();
 
     let intarray: [i32;5] = [10,12,22, 34, 56];
-    let result:  Vec<i32> = newints(&intarray[..intarray.length-1]);
+    let result:  Vec<i32> = newints(&intarray[..intarray.len()-1]);
     print!("{:#?}", result);
 }
 
